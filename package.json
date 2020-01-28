@@ -2,16 +2,25 @@
   "name": "11ty-blog-authors",
   "version": "1.0.0",
   "author": "Peter deHaan",
-  "dependencies": {
-    "rimraf": "*",
-    "@11ty/eleventy": "*"
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-blog-authors/issues"
   },
+  "dependencies": {
+    "@11ty/eleventy": "*",
+    "rimraf": "*"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-blog-authors#readme",
   "keywords": [
     "11ty",
     "eleventy"
   ],
   "license": "MPL-2.0",
+  "main": "index.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-blog-authors.git"
+  },
   "scripts": {
     "build": "eleventy build --config=src/_11ty/.eleventy.js",
     "clean": "rimraf _site",
