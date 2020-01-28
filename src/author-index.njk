@@ -1,0 +1,14 @@
+---
+title: Author archive
+layout: layouts/default.njk
+pagination:
+  data: collections.authors
+  size: Infinity
+permalink: "authors/"
+---
+
+<h1>{{ title }}</h1>
+
+{% for author in pagination.items %}
+<p><a href="/authors/{{ author | slug }}">{{ author | safe }}</a></p>
+{% endfor %}

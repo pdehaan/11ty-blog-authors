@@ -1,0 +1,20 @@
+{
+  "name": "11ty-blog-authors",
+  "version": "1.0.0",
+  "author": "Peter deHaan",
+  "dependencies": {
+    "rimraf": "*",
+    "@11ty/eleventy": "*"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy"
+  ],
+  "license": "MPL-2.0",
+  "private": true,
+  "scripts": {
+    "build": "eleventy build --config=src/_11ty/.eleventy.js",
+    "clean": "rimraf _site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

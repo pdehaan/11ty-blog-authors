@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ renderData.title or title }}</title>
+  <style>
+    dt {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+{{ content | safe }}
+</div>
+
+</body>
+</html>

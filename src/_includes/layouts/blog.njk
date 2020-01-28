@@ -1,0 +1,20 @@
+---
+layout: layouts/default.njk
+---
+
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+  </header>
+
+  {{ content | safe }}
+
+  <footer>
+    <dl>
+      <dt>Author:</dt>
+      <dd><a href="/authors/{{ author | slug }}/">{{ author }}</a></dd>
+      <dt>Created:</dt>
+      <dd><time datetime="{{ page.date | isoString }}">{{ page.date | localeDateTime }}</time></dd>
+    </dl>
+  </footer>
+</article>

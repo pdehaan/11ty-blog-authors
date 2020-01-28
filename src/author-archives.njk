@@ -1,0 +1,20 @@
+---
+title: Author archive
+layout: layouts/default.njk
+pagination:
+  data: collections.authors
+  size: 1
+  alias: author
+permalink: "authors/{{ author | slug }}/"
+renderData:
+  author: "{{ author }}"
+  title: "{{ author }} archives"
+---
+
+<h1>{{ renderData.title | safe }}</h1>
+
+<ul>
+{% for post in collections.authors[author] | reverse %}
+<li><a href="{{ post.page.url | url }}">{{ post.title | safe }}</a> <small>(<time datatime="{{ post.page.date | isoString }}">{{ post.page.date | localeDateTime }}</time>)</small></li>
+{% endfor %}
+</ul>
